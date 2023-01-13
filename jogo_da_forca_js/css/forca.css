@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Yeon+Sung&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box ;
+}
+body {
+    width: 100vw;
+    height: 90vw;
+    margin-top: 10px;
+    background-color: grey;
+    font-family: 'Yeon Sung', cursive;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+#imagem{
+    background-image: url("../img/forca.png");
+    width: 234px;
+    height: 272px;
+    background-repeat:no-repeat;
+}
+
+#palavra-secreta {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+    margin: 30px;
+}
+
+.letras {
+    width: 16px;
+    text-align: center;
+    border-bottom: 2px solid #2f2f2f;
+    color: aliceblue;
+    padding: 5px;
+    margin-left: 4px;
+    margin-right: 4px ;
+}
+
+#teclado {
+    margin-top: 35px;
+}
+
+.teclas button{
+    width: 24px;
+    height: 24px;
+    margin: 2px;
+    margin-bottom: 5px;
+    cursor:pointer;
+    box-shadow: 0px 2px 5px white;
+    border-radius: 3px;
+    border: 1px solid white;
+    color: black;
+    font-weight: 700;
+}
+
+.teclas button:disabled{
+    cursor:not-allowed;
+}
+
+.teclas button:hover {
+    transform: scale(1.1);
+}
+
+#categoria {
+    margin: 30px;
+    color: aliceblue;
+    font: 1.2em;
+    font: bold;
+}
+
+@media (min-width: 321px){
+    .teclas button{
+    width: 25px;
+    height: 25px;
+    }
+
+    #categoria {
+        font: 1.3em;
+}
+}
+@media (min-width: 376px){
+    .teclas button{
+    width: 30px;
+    height: 30px;
+    }
+
+    #palavra-secreta {
+        font-size: 1.3em;
+    }
+
+    #letras {
+        width: 19px;
+    }
+
+    #categoria {
+        font: 1.8em;
+}
+}
+
+@media (min-width: 426px){
+    .teclas button{
+    width: 36px;
+    height: 36px;
+    }
+
+    #palavra-secreta {
+        font-size: 1.8em;
+    }
+
+    #letras {
+        width: 20px;
+    }
+
+    #categoria {
+        font: 1.5em;
+}
+}
+
+@media (min-width: 769px){
+    .teclas button{
+    width: 68px;
+    height: 68px;
+    font-size: 1.5em;
+    }
+
+    #palavra-secreta {
+        font-size: 1.7em;
+    }
+
+    .letras {
+        width: 35px;
+    }
+    
+    #categoria {
+        font-size: 1.7em;
+}
+}
